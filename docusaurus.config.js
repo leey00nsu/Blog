@@ -46,8 +46,6 @@ const config = {
           // postsPerPage: 1,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -63,10 +61,10 @@ const config = {
 
       navbar: {
         title: "LEEYOONSU 블로그",
-        // logo: {
-        //   alt: "My Site Logo",
-        //   src: "img/logo.svg",
-        // },
+        logo: {
+          alt: "LEEYOONSU 블로그 로고",
+          src: "img/favicon.ico",
+        },
         items: [
           // { to: "/blog", label: "Blog", position: "left" },
           { to: "/tags", label: "태그", position: "right" },
