@@ -16,9 +16,9 @@ date: "2023-07-02"
 
 —range-shdw 라는 **css 변수**를 이용하여 색을 지정해주고 있다.
 
-하지만 현재 프로젝트에서는 color picker의 색깔에 맞게 컴포넌트의 색깔을 변경하고 싶었다.
+하지만 현재 프로젝트에서는 `react-color`의 색깔에 맞게 컴포넌트의 색깔을 변경하고 싶었다.
 
-따라서 hsl라는 state를 만들고 , color picker가 바뀔때마다 state를 변경해주고 , —range-shdw에 인라인 스타일을 통하여 state 를 할당해주었다.
+따라서 hsl라는 state를 만들고 , `react-color`의 값이 바뀔때마다 state를 변경해주고 , —range-shdw에 인라인 스타일을 통하여 state 를 할당해주었다.
 
 ```jsx
 style={ {"--range-shdw": hsl} as React.CSSProperties }

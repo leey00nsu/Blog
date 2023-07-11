@@ -63,7 +63,7 @@ const config = {
         title: "LEEYOONSU 블로그",
         logo: {
           alt: "LEEYOONSU 블로그 로고",
-          src: "img/favicon.ico",
+          src: "img/logo.png",
         },
         items: [
           // { to: "/blog", label: "Blog", position: "left" },
