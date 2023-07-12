@@ -6,6 +6,8 @@ tags: [react, 무한스크롤]
 date: "2023-05-09"
 ---
 
+import demoImg from "./demo.gif";
+
 ## 무한스크롤의 구현
 
 리스트에 끝에 닿았을 때 , Axios를 호출하여 리스트를 추가하는것을 구현하고자 한다.
@@ -57,3 +59,28 @@ export default function useIntersectionObserver(callback: () => void) {
   return [observe, unObserve];
 }
 ```
+
+그 후 `useRef`를 이용해 기준이 될 요소에 ref 속성을 부여한다.
+그리고 이 요소를 만든 커스텀 훅을 통해 등록하면 , 이 요소가 뷰포트에 나타날때마다 콜백 함수가 실행되게 된다.
+
+```jsx
+...
+const infScroll = useRef(null);
+
+
+const [observe, unObserve] = useIntersectionObserver(() => {
+  fetchNextPage(); // 다음 페이지를 fetch해오는 함수이다.
+});
+
+useEffect(() => {
+    observe(infScroll.current);
+}, []);
+
+...
+
+<div ref={infScroll} >
+  ...
+</div>
+```
+
+<img src={demoImg} width={300} />
