@@ -115,7 +115,7 @@ import { fabric } from "fabric";
 import { useState, useEffect } from "react";
 
 const App = () => {
-  const [canvas, setCanvas] = (useState < fabric.Canvas) | (null > null);
+  const [canvas, setCanvas] = useState<fabric.Canvas | null>(null);
 
   const initCanvas = () =>
     new fabric.Canvas("canvas", {
