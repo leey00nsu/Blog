@@ -2,7 +2,7 @@
 slug: react-hook-form
 title: react에서 form을 구현해보자 react-hook-form
 authors: [leeyoonsu]
-tags: [react, react-hook-form, Iceberg]
+tags: [react, react-hook-form, iceberg]
 date: "2023-05-23"
 ---
 

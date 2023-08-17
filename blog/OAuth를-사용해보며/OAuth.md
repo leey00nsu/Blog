@@ -2,7 +2,7 @@
 slug: OAuth를-사용해보며
 title: OAuth를 사용해보며
 authors: [leeyoonsu]
-tags: [OAuth]
+tags: [OAuth,iceberg]
 date: "2023-06-22"
 ---
 
