@@ -57,8 +57,12 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-
+      metadata: [
+        {
+          name: "google-site-verification",
+          content: "pxRbiXUEl_Zwqh-HgoGRfaztq-e-INTGFU6bJKmGk_4",
+        },
+      ],
       navbar: {
         title: "LEEYOONSU 블로그",
         logo: {
