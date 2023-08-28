@@ -3,6 +3,8 @@ slug: OAuth를-사용해보며
 title: OAuth를 사용해보며
 authors: [leeyoonsu]
 tags: [OAuth,iceberg]
+keywords: [OAuth,iceberg]
+description: 흔히 보는 간편로그인을 구현하기 위하여 사용하는 OAuth에 대하여 설명합니다.
 date: "2023-06-22"
 ---
 

@@ -3,6 +3,8 @@ slug: Canvas-다루기
 title: Canvas를 이용해 그림 그리기
 authors: [leeyoonsu]
 tags: [react, konva, canvas]
+keywords: [react, konva, canvas]
+description: 리액트에서 Canvas를 다루는 라이브러리에 대해 설명합니다.
 date: "2023-07-05"
 ---
 

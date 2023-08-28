@@ -3,6 +3,8 @@ slug: react-hook-form
 title: react에서 form을 구현해보자 react-hook-form
 authors: [leeyoonsu]
 tags: [react, react-hook-form, iceberg]
+keywords: [react, react-hook-form, iceberg]
+description: Iceberg 프로젝트를 진행하며 , 사용자 입력을 받는 form을 위해 react-hook-form를 도입한 내용을 설명합니다.
 date: "2023-05-23"
 ---
 

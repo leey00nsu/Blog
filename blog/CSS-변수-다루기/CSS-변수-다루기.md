@@ -3,6 +3,8 @@ slug: CSS-변수-다루기
 title: 리액트에서 CSS 변수 다루기
 authors: [leeyoonsu]
 tags: [react, css]
+keywords: [react, css]
+description: 리액트에서 CSS 변수 다루기에 대해 설명합니다.
 date: "2023-07-02"
 ---
 
