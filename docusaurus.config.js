@@ -11,7 +11,7 @@ const config = {
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://leeyoonsu-blog.vercel.app",
+  url: "https://blog.leey00nsu.site",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
@@ -57,12 +57,6 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      metadata: [
-        {
-          name: "google-site-verification",
-          content: "pxRbiXUEl_Zwqh-HgoGRfaztq-e-INTGFU6bJKmGk_4",
-        },
-      ],
       navbar: {
         title: "LEEYOONSU 블로그",
         logo: {
