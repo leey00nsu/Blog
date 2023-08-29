@@ -37,9 +37,11 @@ const config = {
       "classic",
       {
         docs: false,
+
         blog: {
-          routeBasePath: "/",
-          blogSidebarTitle: "All posts",
+          id: "blog",
+          routeBasePath: "/blog",
+          blogSidebarTitle: "모든 글",
           blogSidebarCount: "ALL",
 
           showReadingTime: true,
@@ -54,6 +56,23 @@ const config = {
     ],
   ],
 
+  plugins: [
+    [
+      "@docusaurus/plugin-content-blog",
+      {
+        id: "article",
+        blogSidebarTitle: "모든 글",
+        blogSidebarCount: "ALL",
+
+        showReadingTime: true,
+
+        routeBasePath: "article",
+
+        path: "./article",
+      },
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -64,8 +83,13 @@ const config = {
           src: "img/logo.png",
         },
         items: [
-          // { to: "/blog", label: "Blog", position: "left" },
-          { to: "/tags", label: "태그", position: "right" },
+          { to: "/blog", label: "블로그", position: "left" },
+          {
+            to: "/article",
+            label: "생각들",
+            position: "left",
+          },
+          { to: "/blog/tags", label: "태그", position: "right" },
           {
             href: "https://github.com/leey00nsu",
             label: "GitHub",
