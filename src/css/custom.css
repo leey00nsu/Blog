@@ -31,9 +31,16 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+/* 코드블럭 오버라이딩 */
 code {
   border: 0;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   color: var(--ifm-code-color);
+}
+
+/* 인용문 오버라이딩 */
+blockquote {
+  border-left: 0.25rem solid var(--ifm-color-primary);
+  background-color: var(--ifm-code-background);
 }

@@ -10,20 +10,19 @@ date: "2023-08-02"
 
 import img1 from "./react-query-1.png";
 
-### react-query 왜 사용할까?
+## react-query 왜 사용할까?
 
 `react-query`를 검색해보면 다음과 같은 라이브러리라고 합니다.
 
-:::info
-React Query is **a data-fetching and state management library for React applications that simplifies fetching, caching, and updating data**.
+> React Query is **a data-fetching and state management library for React applications that simplifies fetching, caching, and updating data**.
 
-:::
+설명에 있듯이 `react-query`는 react 어플리케이션에서 비동기 데이터를 관리하고 캐시하며 상태를 관리하며 갱신하는데 도움을 주는 라이브러리입니다.
 
-설명에 있듯이 react 어플리케이션에서 비동기 데이터를 관리하고 캐시하며 상태를 관리하며 갱신할 수 있습니다.
+이번에`artfolio` 프로젝트를 진행하면서 , 기존에 `useEffect`를 사용하여 비동기를 처리 하던 방식에서 react-query 를 사용하여 관리하는 방식을 채택하였습니다.
 
-이번에`artfolio` 프로젝트를 진행하면서 , 기존에 `useEffect`를 사용하여 비동기를 처리 하던 방식에서 `react-query` 를 사용하여 관리하는 방식을 채택하였습니다.
+기존의 useEffect를 이용한 비동기 처리 코드를 보면 다음과 같습니다.
 
-기존의 `useEffect`를 이용한 비동기 처리 코드를 보면 다음과 같습니다.
+### useEffect를 사용한 코드
 
 ```jsx
 import React, { useState, useEffect } from "react";
@@ -60,6 +59,8 @@ export default App;
 
 반면 react-query를 사용하면 코드를 더 간결하게 작성할 수 있습니다.
 
+### react-query를 사용한 코드
+
 ```jsx
 import React from "react";
 import { useQuery } from "react-query";
@@ -89,15 +90,15 @@ const { data, ...options } = useQuery(queryKey, queryFunction, options);
 - `queryFunction` : 데이터를 가져오는 함수이며 `Promise`를 반환해야합니다.
 - `option` : 다양한 옵션을 넣을 수 있습니다.
 
-### useQuery 도입
+## useQuery 도입
 
 이제 실제 `artfolio` 프로젝트에서 적용된 예시를 보겠습니다.
 
 <img src={img1} width={300} />
 
-사진은 경매 상세 정보페이지입니다.
+위 사진은 경매 상세 정보페이지입니다.
 
-위의 22350원과 , 밑의 22350은 현재 경매가를 나타내는데 , **현재 경매가는 웹소켓 연동으로 인하여 서버 데이터와 실시간 동기화 되어야 합니다.**
+위의 22350원과 , 밑의 22350원은 현재 경매가를 나타내는데 , **현재 경매가는 웹소켓 연동으로 인하여 서버 데이터와 실시간 동기화 되어야 합니다.**
 
 따라서 입찰하기를 누르는 순간 , 현재 경매가가 갱신되며 두 컴포넌트는 같은 값을 나타내야 합니다.
 
@@ -125,7 +126,7 @@ const { data, ...options } = useQuery(queryKey, queryFunction, options);
   width={300}
 />
 
-### 결론
+## 결론
 
 이 외에도 비동기 함수를 사용할 때 대부분 react-query를 사용하였는데
 
