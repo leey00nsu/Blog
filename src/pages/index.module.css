@@ -4,9 +4,8 @@
 
 .container {
   width: 100%;
-  height: 75dvh;
+  height: calc(100dvh - var(--ifm-navbar-height));
   justify-content: center;
   align-items: center;
   display: flex;
-  gap: 0.5rem;
 }

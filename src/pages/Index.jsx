@@ -6,8 +6,10 @@ const Index = () => {
   return (
     <Layout title="이윤수의 블로그" description="이윤수의 블로그입니다.">
       <div className={styles.container}>
-        <h1 className={styles.highlight}>LEEYOONSU</h1>
-        <h1>블로그</h1>
+        <iframe
+          style={{ width: "100%", height: "100%" }}
+          src="https://babylon-monitor.vercel.app/"
+        />
       </div>
     </Layout>
   );
