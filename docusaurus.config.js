@@ -8,7 +8,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "leeyoonsu-blog",
   tagline: "leeyoonsu-blog",
-  favicon: "img/favicon.ico",
+  favicon: "favicon.ico",
+  trailingSlash: false,
 
   // Set the production url of your site here
   url: "https://blog.leey00nsu.site",
