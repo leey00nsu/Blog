@@ -9,10 +9,9 @@ const config = {
   title: "leeyoonsu-blog",
   tagline: "leeyoonsu-blog",
   favicon: "favicon.ico",
-  trailingSlash: false,
 
   // Set the production url of your site here
-  url: "https://blog.leey00nsu.site",
+  url: "https://blog.leey00nsu.site/",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
